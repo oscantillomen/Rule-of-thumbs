@@ -1,8 +1,8 @@
 import React from 'react';
 import './components/fontAwesomeIcons';
 import { render } from 'react-dom';
-import Header from './components/Header';
 import Footer from './components/Footer';
+import PreviousTrials from './components/PreviousTrials';
 import Main from './components/Main';
 import './style.scss';
 
@@ -11,6 +11,7 @@ const App = () => {
 		<React.StrictMode>
 			<div>
 				<Main />
+        <PreviousTrials />
         <Footer />
 			</div>
 		</React.StrictMode>

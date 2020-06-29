@@ -22,10 +22,10 @@ const ClosingIn = () => (
                     content: '';
                     display: block;
                     position: absolute;
-                    border-top: 5px solid rgba(242,242,242,0.5);
+                    border-top: 5px solid transparent;
                     border-left: 5px solid rgba(129, 128, 128, 0.5);
-                    border-right: 5px solid rgba(242,242,242,0.5);
-                    border-bottom: 5px solid rgba(242,242,242,0.5);
+                    border-right: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
                     bottom: 25px;
                     left: 30%;
                 }
