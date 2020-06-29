@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import React from 'react';
 import Alert from './Alert';
 import PastTrials from './PastTrials';
 import NewName from './NewName';
