@@ -10,9 +10,8 @@ const App = () => {
 	return (
 		<React.StrictMode>
 			<div>
-				<Header />
 				<Main />
-				<Footer />
+        <Footer />
 			</div>
 		</React.StrictMode>
 	);
