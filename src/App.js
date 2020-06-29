@@ -11,8 +11,8 @@ const App = () => {
 		<React.StrictMode>
 			<div>
 				<Main />
-        <PreviousTrials />
-        <Footer />
+				<PreviousTrials />
+				<Footer />
 			</div>
 		</React.StrictMode>
 	);
