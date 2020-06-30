@@ -11,7 +11,7 @@ const PastTrials = ({ persons }) => (
 );
 
 const mapStateToProps = (state) => {
-	let { persons } = state.redPersons;
+	let persons = state.redPersons;
 	return {
 		persons
 	};

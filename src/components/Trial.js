@@ -7,7 +7,11 @@ const Trial = ({ data: { id, name, time, category, description, image, votes }, 
 	const [ vote, setVote ] = useState(null);
 	const [ voted, setVoted ] = useState(false);
 	const [ upPercent, setUpPercent ] = useState(0);
-	const [ downPercent, setDownPercent ] = useState(0);
+    const [ downPercent, setDownPercent ] = useState(0);
+    
+    useEffect(() => {
+        calcularPorcentaje()
+    }, []);
 
 	const handleSubmitVote = () => {
         if(vote) {
@@ -20,6 +24,7 @@ const Trial = ({ data: { id, name, time, category, description, image, votes }, 
             } else if (vote === 'thumbsDown') {
                 newPersons[index].votes.down += 1;
             }
+            localStorage.setItem('persons', JSON.stringify(newPersons))
             setVote(null)
             setPersons(newPersons);
             setVoted(true)   
@@ -51,7 +56,7 @@ const Trial = ({ data: { id, name, time, category, description, image, votes }, 
 			document.getElementById(`voteUp-${id}`).classList.add('selected');
 			document.getElementById(`voteDown-${id}`).classList.remove('selected');
 			setVote('thumbsUp');
-		}
+        }
 	};
 
 	return (
