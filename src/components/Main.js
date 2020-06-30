@@ -1,20 +1,13 @@
-import React from 'react';
-import InfoGroup from './InfoGroup';
-import ClosingIn from './ClosingIn';
-import Header from './Header';
+import React from "react";
+import InfoGroup from "./InfoGroup";
+import ClosingIn from "./ClosingIn";
 
 const Main = () => (
-    <main>
-        <div>
-            <Header />
-        </div>
-        <div>
-            <InfoGroup />
-        </div>
-        <div className="closingIn">
-            <ClosingIn />
-        </div>
-    </main>
-)
+  <main>
+    <div></div>
+    <InfoGroup />
+    <ClosingIn />
+  </main>
+);
 
 export default Main;

@@ -1,13 +1,13 @@
-const PERSONS = 'PERSONS';
+const PERSONS = "PERSONS";
 
-const setPersons = (data) => {
-	return {
-		type: PERSONS,
-		data
-	};
+const setPersons = data => {
+  return {
+    type: PERSONS,
+    data
+  };
 };
 
 module.exports = {
-	PERSONS,
-	setPersons
+  PERSONS,
+  setPersons
 };

@@ -4,21 +4,9 @@ $font-color-gray: rgba(0,0,0,0.5);
 $thumbs-up-color: rgba(44,187,179, .7);
 $thumbs-down-color: rgba(254,179,0, .7);
 
-* {
-	box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-div,
-span,
-p {
-  margin: 0;
-}
+h1, h2, h3, h4, h5, h6, div, span, p { margin: 0; }
 
 body {
 	@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -33,7 +21,14 @@ header {
 	left: 0;
   right: 0;
   z-index: 1;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  
+  & a {
+    font-size: 16px;
+    text-decoration: none;
+
+    &:hover { color: white; }
+  }
 
 	& div {
 		display: flex;
@@ -43,12 +38,9 @@ header {
 		margin: 0 auto;
 		padding: 25px 10px 0px 10px;
 
-		& h1 {
-      color: white;
-    }
-		& a {
-			color: $font-color-light;
-		}
+		& h1 { color: white; }
+
+		& a { color: $font-color-light; }
 
 		nav {
 			width: 50%;
@@ -56,15 +48,6 @@ header {
 				display: flex;
 				justify-content: space-between;
 				list-style: none;
-
-				& a {
-					font-size: 16px;
-					text-decoration: none;
-
-					&:hover {
-						color: white;
-					}
-				}
 			}
 		}
 	}
@@ -72,10 +55,11 @@ header {
 
 footer {
   margin-top: 50px;
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  left: 0;
 
 	& div {
 		border-top: 1px dotted rgba(0, 0, 0, 0.5);
@@ -85,11 +69,18 @@ footer {
 		justify-content: space-between;
 		align-items: center;
 		margin: 0 auto;
-		padding: 0px 0px 10px 0px;
 		color: rgba(0, 0, 0, 0.5);
 
 		nav {
-			width: 100%;
+      width: 100%;
+      
+      &.navSocial ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & li { margin: 0 10px; }
+      }
 
 			& ul {
 				padding: 0;
@@ -108,6 +99,7 @@ footer {
 
             &.icon {
               color: $font-color-dark;
+
               &:hover{
                 color: $font-color-gray;
               }
@@ -134,11 +126,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  & .closingIn {
-    width: 100%;
-    justify-self: flex-end;
-  }
 }
 
 .previousTrials {
@@ -168,6 +155,55 @@ button {
   &.thumbsDown {
     background-color: $thumbs-down-color;
   }
+}
+
+.closingIn {
+  width: 100%;
+  height: 60px;
+  display: flex;
+
+  &--text {
+    width: 30%;
+    background-color: rgba(129, 128, 128, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-top: 5px solid transparent;
+        border-left: 5px solid rgba(129, 128, 128, 0.5);
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        bottom: 25px;
+        left: 30%;
+    }
+  }
+
+  &--days {
+    background-color: rgba(242,242,242,0.5);
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-number {
+      margin-left: 15px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.title {
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .alert {
@@ -462,15 +498,16 @@ button {
   background-color: $thumbs-down-color;
 }
 
-
-
-
-
 @media only screen and (min-width: 700px) {
+  
   header {
 		display: flex;
 		justify-content: space-between;
-		margin: 0 auto;
+    margin: 0 auto;
+    
+    & nav li {
+      margin: 0 10px;
+    }
 
 		& div {
       width: 90%;
