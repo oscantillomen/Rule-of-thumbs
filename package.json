@@ -42,7 +42,8 @@
     "react-dom": "^16.13.0",
     "react-icons": "^3.10.0",
     "react-redux": "^7.2.0",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "redux-localstorage": "^0.4.1"
   },
   "browserslist": [
     "last 2 Chrome versions"

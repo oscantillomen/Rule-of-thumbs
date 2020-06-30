@@ -4,7 +4,7 @@ const NewName = () => (
     <div className="addName">
         <div className="content">
             <p>Is there anyone else you would want us to add?</p>
-            <div><button>Submit a Name</button></div>
+            <button>Submit a Name</button>
         </div>
     </div>
 )
