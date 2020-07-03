@@ -3,8 +3,6 @@ Rule od thumbs is a crowd sourced of public opinion where anyone can speak out a
 
 This page was made using Parcel, React and CSS.
 ## Available scripts
-<code>npm run build</code>
+<code>npm run dev</code>
 Runs the app in the development mode.  
 Open  [http://localhost:1234](http://localhost:1234/)  to view it in the browser.
-<code>npm run build</code>
-Builds the app for production to the `build` folder.
