@@ -304,7 +304,7 @@ button {
   display: grid;
   grid-template-rows: 300px 60px;
   color: $font-color-light;
-  width: 400px;
+  max-width: 300px;
   height: 300px;
   background-color: rgba(97, 97, 97, 0.7);
   backdrop-filter: blur(10px);
@@ -353,9 +353,8 @@ button {
 
 .trialsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 3em;
-  
 
   & .trial {
     justify-self: stretch;
@@ -376,7 +375,7 @@ button {
 
     &--infoContainer {
       width: 100%;
-      height: 60%;
+      height: 70%;
       align-self: flex-end;
       display: flex;
       flex-direction: column;
@@ -534,7 +533,16 @@ button {
     }
   }
 
+  .trialsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+    &--infoContainer {
+      height: 60%;
+    }
+  }
+
   .infoGroupContainer {
+    width: 400px;
     margin-left: 150px;
   }
 
