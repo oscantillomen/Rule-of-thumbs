@@ -8,7 +8,11 @@ const Header = () => (
       <Link to="/">
         <h1 aria-label="Logo">Rule of Thumb.</h1>
       </Link>
-      <nav>
+      <nav class="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <FontAwesomeIcon icon="bars" />
+        </label>
         <ul>
           <li>
             <Link to="past_trials">Past Trials</Link>

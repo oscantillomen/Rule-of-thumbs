@@ -2,7 +2,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faThumbsUp,
   faThumbsDown,
-  faSearch
+  faSearch,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookSquare,
@@ -16,5 +17,6 @@ library.add(
   faThumbsDown,
   faThumbsUp,
   faSearch,
-  faWikipediaW
+  faWikipediaW,
+  faBars,
 );
