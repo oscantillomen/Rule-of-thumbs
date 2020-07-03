@@ -32,11 +32,11 @@ header {
 
 	& div {
 		display: flex;
-		width: 100%;
+		width: 80%;
     justify-content: space-between;
     align-items: center;
-		margin: 0 auto;
-    padding: 25px 10px 0px 10px;
+    margin: 0 auto;
+    padding-top: 25px;
 
 		& h1 { color: white; }
 
@@ -48,7 +48,6 @@ header {
         width: 100%;
         height: 100vh;
         list-style: none;
-        background-color: rgba(44, 62, 80, 0.95);
         top: 80px;
         left: -100%;
         text-align: center;
@@ -56,7 +55,7 @@ header {
         & li {
           display: block;
           margin: 50px 0;
-          line-height: 30px;
+          line-height: 50px;
         }
       }
     }
@@ -76,7 +75,6 @@ header {
   font-size: 2rem;
   float: right;
   line-height: 80px;
-  margin-right: 40px;
   cursor: pointer;
 }
 
@@ -328,11 +326,11 @@ button {
 }
 
 .infoGroupContainer {
+  font-size: 1.5rem;
   display: grid;
-  // grid-template-rows: 300px 60px;
   color: $font-color-light;
   max-width: 400px;
-  height: auto;
+  // height: 450px;
   background-color: rgba(97, 97, 97, 0.7);
   backdrop-filter: blur(10px);
   margin: 0 auto;
@@ -360,7 +358,7 @@ button {
     }
   
     & h1 {
-      margin-top: 0;
+      margin: 0 0 30px 0px;
       font-size: 3rem;
       font-weight: 400;
       color: white;
@@ -530,20 +528,21 @@ button {
   header {
 		display: flex;
 		justify-content: space-between;
-    margin: 0 auto;
-
-    & nav.navbar {
-      
-      & ul {
-        background-color: transparent;
-
-        & li {
-          margin: 0 10px;
-        }
     
-        & div {
-          width: 90%;
-          padding: 25px 0px 0px 0px;
+    & div {
+      width: 80%;
+      & nav.navbar {
+        & ul {
+          background-color: transparent;
+  
+          & li {
+            margin: 0 10px;
+          }
+      
+          & div {
+            width: 90%;
+            padding: 25px 0px 0px 0px;
+          }
         }
       }
     }
@@ -578,8 +577,8 @@ button {
   }
 
   .infoGroupContainer {
-    width: 400px;
-    margin-left: 150px;
+    max-width: 500px;
+    margin-left: 10%;
   }
 
   .addName {
@@ -610,7 +609,7 @@ button {
   }
 
   nav.navbar {
-    width: 50%;
+    
     & ul {
       background-color: transparent;
       position: static;
@@ -618,9 +617,7 @@ button {
       justify-content: space-between;
       width: 100%;
       height: auto;
-      // & li {
-      //   display: inline-block;
-      // }
+      transition: none 0s;
     }
   }
 
