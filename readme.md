@@ -6,3 +6,4 @@ This page was made using Parcel, React and CSS.
 <code>npm run dev</code>
 Runs the app in the development mode.  
 Open  [http://localhost:1234](http://localhost:1234/)  to view it in the browser.
+[http://rule-of-thumbs.surge.sh/]
